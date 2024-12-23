@@ -1,0 +1,6 @@
+{
+  "devDependencies": {
+    "geckodriver": "^5.0.0",
+    "wdio-geckodriver-service": "^4.1.2"
+  }
+}
