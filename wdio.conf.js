@@ -7,27 +7,26 @@ exports.config = {
         // 'path/to/excluded/files'
     ],
     maxInstances: 10,
-    headless: false,
+    headless: true,
     capabilities: [
-        {
+    {
         maxInstances: 5,
         browserName: 'firefox',
         acceptInsecureCerts: true,
         'moz:firefoxOptions': {
-            args: ['--headless']
+            //args: ['-headless']
         }
     }
 ],
     logLevel: 'error',
     bail: 0,
-    baseUrl: 'https://cnt-7b81e1b1-c7b2-448d-863d-d4fc209f2b2c.containerhub.tripleten-services.com',
+    baseUrl: 'https://e3dda7d0-2d4c-4005-bea4-21258d7308b3.serverhub.practicum-services.com',
     waitforTimeout: 10000,
     connectionRetryTimeout: 120000,
     connectionRetryCount: 3,
-    services: [
-        'firefox-profile',
-        'geckodriver',
-        'intercept',
+    services: [ 
+        'geckodriver', 
+        'intercept', 
     ],
     framework: 'mocha',
     reporters: ['spec'],
